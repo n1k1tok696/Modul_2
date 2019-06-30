@@ -1,0 +1,654 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Aleo:400,700&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
+
+body * {
+	box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Josefin Sans', 'Arial', 'Aleo', serif, sans-serif;
+  font-size: 16px;
+/*   background-color: #02253b; */ /* может позже вернусь, при обновлении чтоб не пробликивал белый цвет */
+}
+
+img {
+	max-width: 100%;
+	width: auto;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  font-weight: normal;
+  color: #FFFFFF;
+}
+ 
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.wrapper {
+	max-width: 1110px;
+	margin: 0 auto;
+}
+
+header {
+	background-image: url(../images/header_bg.png);
+ 	min-height: 100vh;
+ 	background-size: cover;
+ 	background-position: center;
+ 	position: relative;
+}
+
+.greeting {
+	position: absolute;
+	top:50%; 
+    left:50%; 
+    transform:translate(-50%, -50%); 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+h1 {
+	font-size: 48px;
+	font-weight: bold;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 36px;
+	font-family: 'Aleo', serif;
+}
+
+h3 {
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+.greeting p:nth-child(2) {
+	font-size: 22px;
+	font-weight: 300;
+	letter-spacing: 8px;
+	padding: 18px 0 50px 0;
+}
+
+.greeting p:nth-last-child(2) {
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: 3px;
+	padding: 100px 0 15px 0;
+}
+
+form {
+	position: relative;
+	max-width: 650px;
+	width: 100%;
+}
+
+input, button {
+  	border: none;
+}
+
+input {
+	height: 60px;
+	width: 100%;
+	text-align: center;
+	padding-right: 148px;
+	letter-spacing: 3px;
+	font-family: 'Josefin Sans', 'Arial', sans-serif;
+}
+
+.greeting button {
+	font-family: 'Josefin Sans', 'Arial', sans-serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	text-align: left;
+	width: 146px;
+	height: 56px;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	background-color: #5474fd;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+#responcive {
+	font-size: 14px;
+	text-align: center;
+	width: 60px;
+	height: 56px;
+	position: absolute;
+	top: 2px;
+	right: 22px;
+	background-color: #5474fd;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+#responcive {
+	display: none;
+}
+
+button span {
+	padding-left: 38px;
+} 
+
+button img {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: 20px;
+	top: 17px;
+	filter: brightness(10);
+}
+
+#menu-checkbox, .mobile-menu {
+  display: none;
+}
+
+.bg-line-top {
+ 	display: none; 
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.top-line {
+	display: flex;
+ 	justify-content: space-between; 
+	align-items: center;
+}
+
+.bg-line {
+	background-color: #5474fd;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+}
+
+
+.bottom-line {
+	display: flex;
+ 	justify-content: space-between; 
+	align-items: center;
+}
+
+
+.logo {
+	font-size: 24px;
+	text-transform: uppercase;
+	padding: 25px 0 31px 0;
+}
+
+nav {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+nav a {
+	padding-left: 40px;
+	transition: color .5s;
+}
+
+nav a:hover {
+	color: #043459;
+
+}
+
+/* screen 2 */
+
+div.merits {
+	background-image: url(../images/castle.png);
+	min-height: 100vh;
+ 	background-size: cover;
+ 	background-position: center;
+ 	position: relative;
+}
+
+
+.main-merits {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 120px;
+}
+
+div.text {
+	max-width: 541px;
+	font-family: 'Josefin Sans', 'Arial', sans-serif;
+	line-height: 26px;
+}
+
+div.text h2 {
+	padding-bottom: 60px;
+}
+
+div.text p{
+	font-weight: 300;
+}
+
+div.text p:last-of-type {
+	padding: 30px 0 60px 0;
+}
+
+button {
+	font-family: 'Aleo', 'Arial', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #FFFFFF;
+	width: 225px;
+	height: 60px;
+	background-color: #5474fd;
+	cursor: pointer;
+}
+
+div.galery {
+	max-width: 50%;
+	text-align: right;
+}
+
+
+div.galery img:first-child {
+	padding-right: 125px;
+}
+
+div.bg-recommendations {
+	background-color: #333333;
+}
+
+.recommendations {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	text-align: center;
+	padding: 105px 0;
+
+}
+
+.recommendations img {
+	width: 60px;
+}
+
+.recommendations p {
+	font-family: 'Aleo', 'Arial', serif;
+	font-size: 36px;
+	line-height: 36px;
+	padding-top: 30px;
+}
+
+
+.example {
+	background-image: url(../images/mountains.png);
+	min-height: 100vh;
+ 	background-size: cover;
+ 	background-position: center;
+}
+
+.data {
+	padding-top: 120px;
+	display: flex;
+ 	justify-content: flex-end;
+}
+
+.example-text {
+	max-width: 541px;
+	text-align: right;
+	font-size: 20px;
+	padding: 50px 30px;
+	background-color: rgba(51,51,51,0.9); 
+}
+
+.example-text p,
+.example-text h3 {
+	text-align: left;
+}
+
+
+.example-text h3 {
+	text-transform: uppercase;
+	padding: 30px 0;
+}
+
+.example-text p:last-of-type {
+	font-size: 16px;
+	padding-bottom: 50px;
+	font-weight: 300;
+	line-height: 26px;
+}
+
+.review {
+	background-image: url(../images/tourist_bg.png);
+	min-height: 100vh;
+ 	background-size: cover;
+ 	background-position: center;
+}
+
+.review h2 {
+	text-align: center;
+	padding: 120px 0 100px 0;
+}
+
+.review-main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.review-main h3 {
+	padding: 50px 0 30px 0;
+}
+
+.review-main p {
+	text-indent: 28px;
+	font-weight: 300;
+	line-height: 26px;
+}
+
+.review-text {
+	padding: 0 40px 0 55px;
+	background-color: #333333;
+} 
+
+ .review-main i {
+	font-size: 25px;
+	color: #5474fd;
+	line-height: 25px;
+} 
+
+
+footer {
+	background-color: #333333;
+	text-align: center;
+}
+
+
+footer p:first-child {
+	text-transform: uppercase;
+	font-size: 24px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding: 120px 0 15px 0;
+}
+
+footer p:nth-of-type(2) {
+	letter-spacing: 2px;
+	font-weight: 300; 
+
+}
+
+footer ul {
+	padding: 0;
+	letter-spacing: 5px;
+}
+
+footer ul li{
+ 	display: inline-block;
+	list-style-type: none;
+	padding: 26px 0 50px 0;
+
+}
+
+footer ul a {
+	transition: color 0.5s;	
+}
+
+ footer ul a:hover {
+	color: #5474fd;
+} 
+ 
+@media (max-width: 1125px) { /* риспонсив верстка */
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+} 
+
+@media (max-width: 1050px) {
+.review-text {
+	padding: 0 10px 0 55px;
+} 
+}
+
+@media (max-width: 1030px) {
+	div.galery img:first-child {
+	padding-right: 0;
+}
+
+.review-main {
+	flex-direction: column;
+/* 	justify-content: space-between;
+align-items: center; */
+}
+
+.review-main img {
+	margin-bottom: 15px;
+}
+
+.review-text {
+	padding: 0 10px;
+	margin-bottom: 50px;
+} 
+
+.review h2 {
+	padding: 50px 0;
+}
+
+.review-main h3 {
+	padding: 15px 0;
+}
+
+footer p:first-child {
+	padding: 50px 0 15px 0;
+}
+
+} 
+
+@media (max-width: 800px) {
+
+.greeting {
+	top:70%; 
+}
+
+.bg-line {
+		display: none;
+	}
+ 
+.bg-line-top {
+	display: block;
+	position: relative;
+} 
+
+.mobile-menu {
+    display: inline-flex;
+    cursor: pointer;
+    
+  }
+  
+ .mobile-menu img {
+    width: 48px;
+    position: absolute;
+    top: 10px;
+    right: 5px;
+ }
+
+ nav {
+    display: none;
+ }
+
+nav a {
+	padding-left: 0;
+
+}
+  
+input#menu-checkbox:checked + nav {
+    display: block;
+    position: absolute;
+    top: 8px;
+    right: 55px;
+  }
+  
+  
+
+input#menu-checkbox:checked + nav a{
+    display: block;
+    margin: 7px 0;
+    background-color: rgba(255,255,255,0.2);
+    padding: 15px 65px;
+  } 
+
+.main-merits {
+	flex-direction: column;
+}
+
+div.galery {
+	max-width: 100%;
+ 	display: block;
+	padding-top: 20px;
+}
+
+
+.main-merits {
+	padding-top: 40px;
+}
+
+div.text {
+	text-align: center;
+}
+div.text h2 {
+	padding-bottom: 30px;
+}
+
+div.text p {
+	text-align: left;
+}
+
+div.text p:last-of-type {
+	padding-bottom: 20px;
+}
+
+.data {
+	padding-top: 120px;
+ 	justify-content: center;
+}
+
+
+}
+
+@media (max-width: 765px) {
+	div.galery {
+ 	padding-bottom: 20px;
+	text-align: center;
+}
+}
+
+@media (max-width: 720px) {
+
+form {
+	position: relative;
+	max-width: 650px;
+	width: 100%;
+	padding: 0 20px;
+}
+.greeting button {	
+	right: 22px;
+}
+
+
+
+div.text p {
+	text-align: center;
+}
+
+.recommendations {
+	display: flex;
+	flex-direction: column;
+}
+
+.rectangle,
+.checked,
+.like {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-bottom: 1px solid #FFFFFF;
+	width: 100%;
+	padding: 20px;
+}
+
+.like {
+	border: none;
+}
+.recommendations {
+	padding: 0;
+}
+
+.recommendations p {
+	font-size: 36px;
+	line-height: 36px;
+	padding-left: 20px;
+	padding-top: 0;
+}
+
+footer p:first-child {
+	padding-top: 40px;
+}
+footer ul li{
+	padding-bottom: 30px;
+
+}
+
+}
+
+@media (max-width: 515px) {
+
+.greeting button {	
+	display: none;
+}
+
+#responcive {
+	display: block;
+}
+input {
+	padding: 0 68px 0 5px;
+	letter-spacing: 1px;
+}
+h1 {
+	font-size: 36px;
+	letter-spacing: 6px;
+}
+
+h2 {
+	font-size: 24px;
+}
+.greeting p:nth-child(2) {
+	font-size: 18px;
+	letter-spacing: 6px;
+}
+.data {
+    padding-top: 60px;
+}
+.example-text {
+	text-align: center;
+}
+.example-text p,
+.example-text h3 {
+	text-align: center;
+}
+
+.recommendations p {
+	font-size: 24px;
+}
+}
