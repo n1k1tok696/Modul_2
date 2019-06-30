@@ -460,7 +460,7 @@ footer p:first-child {
 @media (max-width: 800px) {
 
 .greeting {
-	top:70%; 
+	top:75%; 
 }
 
 .bg-line {
@@ -637,6 +637,10 @@ h2 {
 .greeting p:nth-child(2) {
 	font-size: 18px;
 	letter-spacing: 6px;
+}
+
+.greeting p:nth-last-child(2) {
+	padding: 40px;
 }
 .data {
     padding-top: 60px;
