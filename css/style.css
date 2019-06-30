@@ -390,6 +390,7 @@ footer p:nth-of-type(2) {
 }
 
 footer ul {
+	margin: 0;
 	padding: 0;
 	letter-spacing: 5px;
 }
